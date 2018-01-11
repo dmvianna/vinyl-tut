@@ -1,0 +1,21 @@
+:set -XDataKinds
+:set -XPolyKinds
+:set -XTypeOperators
+:set -XTypeFamilies
+:set -XFlexibleContexts
+:set -XFlexibleInstances
+:set -XNoMonomorphismRestriction
+:set -XGADTs
+:set -XTypeSynonymInstances
+:set -XTemplateHaskell
+:set -XStandaloneDeriving
+
+import Data.Vinyl
+import Data.Vinyl.Functor
+import Control.Applicative
+import Control.Lens hiding (Identity)
+import Control.Lens.TH
+import Data.Char
+import Test.DocTest
+import Data.Singletons.TH
+import Data.Maybe
